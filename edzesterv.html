@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <title>Fitness Világ - Edzésterv</title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="print.css" media="print">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="help.js"></script>
+  <script>
+    function showVideo(element) {
+      var thumbnail = element.getElementsByClassName('thumbnail')[0];
+      var video = element.getElementsByTagName('video')[0];
+
+      element.classList.add('playing'); /* hozzáadja az osztályt a lejátszott állapothoz */
+      video.play();
+    }
+  </script>
+</head>
+<body>
+  <a href="#content" class="skip-link" onclick="skipMenu()">Ugrás a tartalomra</a>
+  <header>
+    <nav>
+      <div class="logo-item">
+        <img src="logo.jpg" alt="Logó" class="logo">
+        <span class="menu-label">Fitness Világ</span>
+      </div>
+      <div class="out">
+      <input type="checkbox" id="menu-toggle"></div>
+      <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+      <ul class="menu">
+        <li><a href="index.html"><strong>Kezdőlap</strong></a></li>
+        <li class="highlight"><a href="edzesterv.html">Edzésterv</a></li>
+        <li><a href="taplalkozas.html">Táplálkozás</a></li>
+        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+        <li><button class="button" onclick="increaseFontSize()">Betűméret állítása</button></li>
+        <li><button class="button" onclick="increaseContrast()">Kontraszt állítása</button></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container2">
+    <h1>Minta gyakorlatok</h1>
+    
+    <div class="section" onclick="showVideo(this);">
+        <div class="content">
+          <h2>Toló gyakorlatok</h2>
+          <p>A toló gyakorlatok a felsőtest izmait fejlesztik, beleértve a mell- és tricepszizmokat. Néhány klasszikus tológyakorlat például a <strong>fekvenyomás</strong>, a letolás és a fekvőtámasz. A legfontosabb gyakorlat ami kifejezetten a mellizmot edzi, az a fekvenyomás. Erről láthatnak egy rövid ismertetőt.</p>
+          <div class="thumbnail" style="background-image: url('benchpress_thumbnail.jpg');"></div>
+      <video src="benchpress.mp4" poster="benchpress_thumbnail.jpg" controls></video>
+        <p>Itt pedig megtalálják a videó leírását: </p>
+          <a href="fekvenyomas.html" class="page-link">Fekvenyomás videóleírás</a>
+        </div>
+      </div>
+    
+    <div class="section" onclick="showVideo(this);">
+      <div class="content">
+            <h2>Húzó gyakorlatok</h2>
+            <p>A húzó gyakorlatok a hátizom és a bicepszizmok fejlesztésére koncentrálnak. Klasszikus húzó gyakorlatok például a húzóckodás, az evezés és a kétkezes súlyzó húzás. A <strong>mellhez húzás</strong> is egy kiemelten hasznos és fontos gyakorlat a hátizmok fejlesztéséhez, erről videós segítséget is láthatnak.</p>
+            <div class="thumbnail" style="background-image: url('rowing_thumbnail.jpg');"></div>
+      <video src="rowing.mp4" poster="rowing_thumbnail.jpg" controls></video>
+            <p>Itt pedig megtalálják a videó leírását: </p>
+          <a href="mellhezhuzas.html" class="page-link">Mellhez húzás videóleírás</a>
+          </div>
+    </div>
+    
+    <div class="section" onclick="showVideo(this);">
+      <div class="content">
+        <h2>Láb gyakorlatok</h2>
+        <p>A lábgyakorlatok segítségével erősítheted a lábizmokat és a farizmokat, amelyek kulcsfontosságúak az egész test egyensúlyának és erőteljes állóképességének megtartásához. A legfontosabb lábgyakorlatok a <strong>guggolás</strong>, a lábemelés és a lábpréses gépek. A guggolásról tekinthetnek meg egy videót.</p>
+        <div class="thumbnail" style="background-image: url('squat_thumbnail.jpg');"></div>
+      <video src="squat.mp4" poster="squat_thumbnail.jpg" controls></video>
+        <p>Itt pedig megtalálják a videó leírását: </p>
+          <a href="guggolas.html" class="page-link">Guggolás videóleírás</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+    <div class="button-group">
+      <a href="https://www.facebook.com"><img src="facebook.png" alt="facebook ikon"></a>
+      <a href="https://www.twitter.com"><img src="twitter.png" alt="twitter ikon"></a>
+      <a href="https://www.instagram.com"><img src="instagram.png" alt="instagram ikon"></a>
+      <a href="https://www.youtube.com"><img src="youtube.png" alt="youtube ikon"></a>
+  </div>
+</div>
+  </footer>
+</body>
+</html>

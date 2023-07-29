@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <title>Fitness Világ - Kapcsolat</title>
+  <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="print.css" media="print">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="help.js"></script>
+</head>
+<body>
+  <a href="#content" class="skip-link" onclick="skipMenu()">Ugrás a tartalomra</a>
+  <header>
+    <nav>
+      <div class="logo-item">
+        <img src="logo.jpg" alt="Logó" class="logo">
+        <span class="menu-label">Fitness Világ</span>
+      </div>
+      <div class="out">
+      <input type="checkbox" id="menu-toggle"></div>
+      <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+      <ul class="menu">
+        <li><a href="index.html"><strong>Kezdőlap</strong></a></li>
+        <li><a href="edzesterv.html">Edzésterv</a></li>
+        <li><a href="taplalkozas.html">Táplálkozás</a></li>
+        <li class="highlight"><a href="kapcsolat.html">Kapcsolat</a></li>
+        <li><button class="button" onclick="increaseFontSize()">Betűméret állítása</button></li>
+        <li><button class="button" onclick="increaseContrast()">Kontraszt állítása</button></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="formate">
+    <h1>Kapcsolat</h1>
+    <h2>Ha szeretnél tűlünk egy edzéstervet és étrendet kapni, ami hozzásegít az <strong><em>Álom formád</em></strong> eléréséhez, töltsd ki az alábbi űrlapot és küldj nekünk egy e-mailt, amiben leírod a jelenlegi formád, amit el akarsz érni, és azon ételeket amiket (pl. allergia vagy más miatt) kerülni szeretnél a diéta alatt.</h2>
+  </div>
+
+<form action="mailto:ohh5z8@inf.elte.hu" method="POST" enctype="text/plain">
+  <fieldset>
+    <legend> Adatok</legend>
+    <label for="nev">Név: </label> <br> <input type="text" name="nev" id="nev" size="60" placeholder="pl.: Hajdú Sító" maxlength="50"> <br> 
+    <label for="email">E-mail cím: </label> <br> <input type="email" name="email" id="email" size="60" placeholder="pl.: hajdusito@gmail.com" maxlength="319"> <br>
+    <input type="checkbox" name="hirlevel" id="hirlevel" value="igen">
+    <label for="hirlevel">Feliratkozok a hírlevélre</label>
+  </fieldset>
+  <fieldset>
+    <legend>Neme</legend>
+    <p>Kérjük válassza ki nemét!<br>
+    <label for="ferfi">Férfi</label> <input type="radio" name="nem" id="ferfi">
+    <label for="no">Nő</label> <input type="radio" name="nem" id="no"> </p>
+  </fieldset>
+  <fieldset>
+    <legend>Információk rólad</legend>
+    <label for="info">Írd le, amit úgy véled, nekünk is tudni kell</label> <br>
+    <textarea cols="60" rows="10" name="info" id="info" placeholder="pl.: célok, allergiák, szabadidő" maxlength="4000"></textarea>
+  </fieldset>
+  <fieldset>
+    <legend> Küldés </legend>
+    <input type="submit" value="Elküld">
+    <input type="reset" value="Töröl"> 
+  </fieldset>
+
+</form> 
+
+  
+
+  <footer>
+    <div class="footer">
+    <div class="button-group">
+      <a href="https://www.facebook.com"><img src="facebook.png" alt="facebook ikon"></a>
+      <a href="https://www.twitter.com"><img src="twitter.png" alt="twitter ikon"></a>
+      <a href="https://www.instagram.com"><img src="instagram.png" alt="instagram ikon"></a>
+      <a href="https://www.youtube.com"><img src="youtube.png" alt="youtube ikon"></a>
+  </div>
+</div>
+  </footer>
+</body>
+</html>
+
